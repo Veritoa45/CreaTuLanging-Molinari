@@ -1,9 +1,8 @@
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = (props) => {
   return (
-    <div>
-      <h1>{greeting}</h1>
-      <p>Esta es la lista de productos</p>
-    </div>
+    <>
+      <h1 className="font-orbitron mt-[20px] text-center">{props.saludo}</h1>
+    </>
   );
 };
 
