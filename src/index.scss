@@ -1,0 +1,125 @@
+@use "./sass/colors.scss" as *;
+@use "./sass/variables.scss" as *;
+@use "./sass/mixins.scss" as *;
+@use "./sass/typography.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: $primary-color;
+}
+
+.navBar {
+  background: $black;
+  color: $white;
+  position: relative;
+  padding: $padding-md $padding-lg;
+  z-index: 10;
+  .logo {
+    width: 180px;
+  }
+
+  .groupNav {
+    @include flex-between;
+
+    .relative {
+      &:hover .megaMenu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.megaMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: $black;
+  box-shadow: $box-shadow;
+  padding: $padding-xl 40px;
+  @include flex-between;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-md;
+  }
+}
+
+.aNav {
+  color: $white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+    cursor: pointer;
+  }
+}
+
+.card {
+  position: relative;
+  background: $tertiary-color;
+  width: 300px;
+  height: 400px;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  .img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .info {
+    @include flex-between($gap-md);
+    flex-direction: column;
+    padding: $padding-md;
+  }
+
+  .etiquetas {
+    @include flex-wrap($gap-md);
+  }
+
+  .etiqueta {
+    background: $white;
+    color: $black;
+    padding: $padding-sm $padding-md;
+    border-radius: $border-radius;
+    font-size: 14px;
+  }
+
+  .btn-mas {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    background: $secondary-color;
+    color: $black;
+    padding: $padding-md;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+  }
+}
+
+.list {
+  @include flex-wrap($gap-xl);
+  padding: $padding-lg;
+}

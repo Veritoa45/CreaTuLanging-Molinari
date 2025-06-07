@@ -1,0 +1,29 @@
+@use "./variables.scss" as *;
+
+@mixin flex-center($gap: $gap-sm) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-between($gap: $gap-sm) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-around($gap: $gap-sm) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-wrap($gap: $gap-sm) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: $gap;
+}

@@ -3,10 +3,10 @@ import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <NavBar />
       <ItemListContainer saludo="Bienvenidos a Nevela" />
-    </>
+    </div>
   );
 }
 

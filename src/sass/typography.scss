@@ -1,0 +1,40 @@
+@use "./colors.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  color: $white;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
