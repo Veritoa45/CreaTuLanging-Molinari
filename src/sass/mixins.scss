@@ -7,6 +7,14 @@
   gap: $gap;
 }
 
+@mixin flex-column($gap: $gap-sm) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
 @mixin flex-between($gap: $gap-sm) {
   display: flex;
   justify-content: space-between;

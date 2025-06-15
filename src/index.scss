@@ -9,8 +9,9 @@
   box-sizing: border-box;
 }
 
-.app {
-  background: $primary-color;
+body {
+  background-color: $primary-color;
+  height: 100vh;
 }
 
 .navBar {
@@ -64,7 +65,9 @@
   text-decoration: none;
 
   &:hover {
-    color: $black;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    padding: 5px;
     cursor: pointer;
   }
 }
@@ -100,23 +103,33 @@
     border-radius: $border-radius;
     font-size: 14px;
   }
+}
 
-  .btn-mas {
-    width: 100px;
-    position: absolute;
-    bottom: 10px;
-    left: 100px;
-    background: $primary-color;
+.counter {
+  @include flex-center;
+  margin-bottom: 20px;
+}
+
+.btnAdd {
+  background: $tertiary-color;
+  color: $black;
+  padding: $padding-md;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    background: $white;
     color: $black;
-    padding: $padding-md;
-    border-radius: $border-radius;
-    cursor: pointer;
-    font-weight: 600;
-    &:hover {
-      background: $white;
-      color: $black;
-    }
   }
+}
+
+.box {
+  text-align: center;
+  padding: $padding-lg;
+  width: 50px;
+  height: 50px;
+  border-radius: $border-radius;
+  border: 1px solid $black;
 }
 
 .list {
@@ -136,4 +149,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cardDescription {
+  position: relative;
+  @include flex-column;
+  width: 750px;
+  margin: 30px auto;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+}
+
+.cardInformation {
+  position: relative;
+  height: 24rem;
+  overflow: hidden;
+  border-radius: $border-radius;
+  padding: $padding-md;
+}
+
+.imageCard {
+  width: 730px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: $border-radius;
+}
+
+.textInformation {
+  padding: $padding-lg;
+
+  p {
+    text-align: justify;
+    font-size: 18px;
+  }
+}
+
+.textLine {
+  @include flex-between($gap-lg);
+  margin-bottom: 30px;
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.errorPage {
+  @include flex-column($gap-xl);
+  height: calc(100vh - 125px);
+  background: $primary-color;
+}
+
+.btn {
+  background: $black;
+  color: $white;
+  padding: $padding-lg;
+  border-radius: $border-radius;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  &:hover {
+    background: $white;
+    color: $black;
+  }
 }
