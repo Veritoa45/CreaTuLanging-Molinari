@@ -1,8 +1,15 @@
+import { useState, useContext } from "react";
 import ItemCount from "./ItemCount";
+import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 const ItemDetail = ({ detail }) => {
+  const { addItem } = useContext(CartContext);
+  const [purchase, setPurchase] = useState(false);
+
   const onAdd = (cantidad) => {
-    alert(`Agregaste ${cantidad} items`);
+    addItem(detail, cantidad);
+    setPurchase(true);
   };
 
   return (
@@ -21,7 +28,18 @@ const ItemDetail = ({ detail }) => {
           {detail.descripcion}
         </p>
       </div>
-      <ItemCount stock={detail.stock} onAdd={onAdd} />
+      {purchase ? (
+        <div className="line">
+          <Link className="btn" to={"/cart"}>
+            Ir al carrito
+          </Link>
+          <Link className="btn" to={"/"}>
+            Seguir comprando
+          </Link>
+        </div>
+      ) : (
+        <ItemCount stock={detail.stock} onAdd={onAdd} />
+      )}
     </div>
   );
 };

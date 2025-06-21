@@ -16,7 +16,7 @@ const Item = ({ prod }) => {
           ))}
         </div>
       </div>
-      <Link to={`/item/${id}`} className="btn-mas">
+      <Link to={`/item/${id}`} className="btnMas">
         Ver más
       </Link>
     </div>

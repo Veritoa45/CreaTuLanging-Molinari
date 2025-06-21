@@ -103,6 +103,25 @@ body {
     border-radius: $border-radius;
     font-size: 14px;
   }
+
+  .btnMas {
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+    background: $black;
+    color: $white;
+    padding: $padding-md;
+    border-radius: $border-radius;
+    margin: 0px auto;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+  }
 }
 
 .counter {
@@ -193,6 +212,11 @@ body {
   }
 }
 
+.emptyCart {
+  @include grid-places;
+  margin-top: 40px;
+}
+
 .errorPage {
   @include flex-column($gap-xl);
   height: calc(100vh - 125px);
@@ -200,16 +224,95 @@ body {
 }
 
 .btn {
+  @include btn;
+}
+
+.line {
+  @include flex-around;
+  width: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  --d: 50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: $tertiary-color;
+  box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0,
+    calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 1px,
+    calc(0 * var(--d)) calc(1 * var(--d)) 0 2px,
+    calc(-0.707 * var(--d)) calc(0.707 * var(--d)) 0 3px,
+    calc(-1 * var(--d)) calc(0 * var(--d)) 0 4px,
+    calc(-0.707 * var(--d)) calc(-0.707 * var(--d)) 0 5px,
+    calc(0 * var(--d)) calc(-1 * var(--d)) 0 6px;
+  animation: l27 1s infinite steps(10);
+}
+
+@keyframes l27 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.btnVaciar {
+  @include btn;
+  text-align: center;
+  width: 230px;
+  margin: 40px auto;
+}
+
+.trash {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #ff0000;
+  &:hover {
+    color: $tertiary-color;
+  }
+}
+
+.cartView {
+  @include grid-places;
+  margin-top: 40px;
+}
+
+.table {
+  width: 900px;
+  margin: 30px auto;
+  border-radius: $border-radius;
+}
+
+.head {
   background: $black;
   color: $white;
-  padding: $padding-lg;
-  border-radius: $border-radius;
-  margin-bottom: 20px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 20px;
-  &:hover {
-    background: $white;
-    color: $black;
+  text-align: center;
+  th {
+    padding: $padding-md;
+    font-weight: 600;
   }
+}
+
+.fila {
+  padding: $padding-lg;
+  background: rgba(227, 194, 254, 0.5);
+}
+
+.space {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.imagenTabla {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: $border-radius;
+}
+
+.bold {
+  text-align: center;
+  font-weight: 600;
 }
