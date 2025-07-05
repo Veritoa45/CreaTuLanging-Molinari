@@ -3,6 +3,8 @@
 @use "./sass/mixins.scss" as *;
 @use "./sass/typography.scss" as *;
 
+/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,8 @@ body {
   background-color: $primary-color;
   height: 100vh;
 }
+
+/* NavBar */
 
 .navBar {
   background: $black;
@@ -71,6 +75,8 @@ body {
     cursor: pointer;
   }
 }
+
+/* Item List */
 
 .card {
   position: relative;
@@ -315,4 +321,14 @@ body {
 .bold {
   text-align: center;
   font-weight: 600;
+}
+
+.oops {
+  width: 500px;
+  margin-bottom: 80px;
+}
+
+.noProducts {
+  @include grid-places;
+  margin-top: 100px;
 }

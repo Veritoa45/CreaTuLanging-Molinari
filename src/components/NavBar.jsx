@@ -50,7 +50,7 @@ const NavBar = () => {
               <NavLink to={"/category/Estrategia"} className="aNav">
                 Estrategia
               </NavLink>
-              <NavLink to={"/category/Hash and Slash"} className="aNav">
+              <NavLink to={"/category/Hack and Slash"} className="aNav">
                 Hack and Slash
               </NavLink>
               <NavLink to={"/category/Metroidvania"} className="aNav">

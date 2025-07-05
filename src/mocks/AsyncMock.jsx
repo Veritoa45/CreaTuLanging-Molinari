@@ -1,5 +1,5 @@
 const productos = [
-  {
+  /*{
     id: "01",
     nombre: "Afterimage",
     precio: 24.99,
@@ -26,7 +26,7 @@ const productos = [
     descripcion:
       "Assetto Corsa v1.16 introduce el nuevo circuito escaneado por láser «Laguna Seca», 7 nuevos coches entre los que se encuentra el esperado Alfa Romeo Giulia Quadrifoglio. Consulta el registro de cambios para más información.",
     imagen: "../assettoCorsa.jpg",
-    categoria: ["Simulación", "Deportes y carreras", "Mundo Abierto"],
+    categoria: ["Simulación", "Deportes y Carreras", "Mundo Abierto"],
     stock: 10,
   },
   {
@@ -50,7 +50,7 @@ const productos = [
       "Casuales",
       "Roguelikes y Roguelites",
       "Estrategia",
-      "Cartas y mesa",
+      "Cartas y Mesa",
     ],
     stock: 10,
   },
@@ -96,7 +96,7 @@ const productos = [
     descripcion:
       "Amplíe su casino desde cero, contrate empleados, personalícelo, apueste y disfrute de su propio casino.",
     imagen: "../casinoSimulator.jpg",
-    categoria: ["Disparos", "Simulación", "Cartas y mesa"],
+    categoria: ["Disparos", "Simulación", "Cartas y Mesa"],
     stock: 10,
   },
   {
@@ -108,9 +108,9 @@ const productos = [
     imagen: "../celeste.avif",
     categoria: ["Plataformas", "Aventura"],
     stock: 10,
-  },
+  },*/
   {
-    id: "11",
+    /*id: "11",*/
     nombre: "Civilization VII",
     precio: 69.99,
     descripcion:
@@ -120,7 +120,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "12",
+    /*id: "12",*/
     nombre: "Dark Souls III",
     precio: 47.99,
     descripcion:
@@ -130,7 +130,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "13",
+    /*id: "13",*/
     nombre: "Darkest Dungeon 2",
     precio: 18.99,
     descripcion:
@@ -140,7 +140,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "14",
+    /*id: "14",*/
     nombre: "Dead By Daylight",
     precio: 14.99,
     descripcion:
@@ -150,7 +150,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "15",
+    /*id: "15",*/
     nombre: "Dead Cells",
     precio: 12.49,
     descripcion:
@@ -165,17 +165,17 @@ const productos = [
     stock: 10,
   },
   {
-    id: "16",
+    /*id: "16",*/
     nombre: "Descenders",
     precio: 12.49,
     descripcion:
       "Descenders es un descenso extremo de freeride para la era moderna, con mundos generados proceduralmente, y donde los errores tienen consecuencias reales. ¿Llevarás a tu equipo a la gloria y te convertirás en el próximo Descender legendario?",
     imagen: "../descenders.jpg",
-    categoria: ["Acción", "Deportes y carreras"],
+    categoria: ["Acción", "Deportes y Carreras"],
     stock: 10,
   },
   {
-    id: "17",
+    /*id: "17",*/
     nombre: "Devil May Cry 5",
     precio: 4.49,
     descripcion:
@@ -185,7 +185,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "18",
+    /*id: "18",*/
     nombre: "Dota 2",
     precio: 1.99,
     descripcion:
@@ -195,7 +195,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "19",
+    /*id: "19",*/
     nombre: "Dynasty Warriors 9",
     precio: 58.29,
     descripcion:
@@ -205,17 +205,17 @@ const productos = [
     stock: 10,
   },
   {
-    id: "20",
+    /*id: "20",*/
     nombre: "EA Sports FC 25",
     precio: 69.99,
     descripcion:
       "EA SPORTS FC™ 25 te ofrece más formas de ganar para el club. Forma equipo con amistades en tus modos favoritos con el nuevo Rush 5 vs. 5 y lidera a tu club hacia la victoria gracias a FC IQ, que te ofrece más control táctico que nunca.",
     imagen: "../eaSportFc.jpg",
-    categoria: ["Simulación", "Deportes y carreras"],
+    categoria: ["Simulación", "Deportes y Carreras"],
     stock: 10,
   },
   {
-    id: "21",
+    /*id: "21",*/
     nombre: "Elden Ring",
     precio: 47.99,
     descripcion:
@@ -225,7 +225,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "22",
+    /*id: "22",*/
     nombre: "Expedition 33",
     precio: 34.99,
     descripcion:
@@ -235,17 +235,17 @@ const productos = [
     stock: 10,
   },
   {
-    id: "23",
+    /*id: "23",*/
     nombre: "Forza Horizon 5",
     precio: 16.39,
     descripcion:
       "Explora los coloridos paisajes del mundo abierto de México con una acción de conducción ilimitada y divertida en los mejores autos del mundo.",
     imagen: "../forzaHorizon5.jpg",
-    categoria: ["Arcade", "Deportes y carreras", "Mundo Abierto"],
+    categoria: ["Arcade", "Deportes y Carreras", "Mundo Abierto"],
     stock: 10,
   },
   {
-    id: "24",
+    /*id: "24",*/
     nombre: "Gris",
     precio: 7.99,
     descripcion:
@@ -255,7 +255,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "25",
+    /*id: "25",*/
     nombre: "GTA V",
     precio: 59.99,
     descripcion:
@@ -265,7 +265,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "26",
+    /*id: "26",*/
     nombre: "Hades",
     precio: 4.99,
     descripcion:
@@ -275,7 +275,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "27",
+    /*id: "27",*/
     nombre: "Haste",
     precio: 8.99,
     descripcion:
@@ -285,7 +285,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "28",
+    /*id: "28",*/
     nombre: "Hollow Knight",
     precio: 4.99,
     descripcion:
@@ -295,7 +295,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "29",
+    /*id: "29",*/
     nombre: "Inscryption",
     precio: 4.19,
     descripcion:
@@ -305,7 +305,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "30",
+    /*id: "30",*/
     nombre: "It Takes Two",
     precio: 39.99,
     descripcion:
@@ -315,7 +315,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "31",
+    /*id: "31",*/
     nombre: "League of Legends",
     precio: 29.99,
     descripcion:
@@ -325,27 +325,27 @@ const productos = [
     stock: 10,
   },
   {
-    id: "32",
+    /*id: "32",*/
     nombre: "NBA 2K 25",
     precio: 69.99,
     descripcion:
       "Domina cada cancha con autenticidad y realismo con tecnología ProPLAY™, que te brinda el máximo control sobre cómo juegas en NBA 2K25. Define tu legado en MyCAREER, MyTEAM, MyNBA y The W.",
     imagen: "../nba2k25.jpg",
-    categoria: ["Simulación", "Deportes y carreras"],
+    categoria: ["Simulación", "Deportes y Carreras"],
     stock: 10,
   },
   {
-    id: "33",
+    /*id: "33",*/
     nombre: "Need for Speed Heat",
     precio: 69.99,
     descripcion:
       "Apúrate de día y arriésgalo todo de noche en Need for Speed™ Heat Deluxe Edition, un juego de carreras callejeras dinámico, donde las líneas de la ley se desvanecen a medida que se pone sol.",
     imagen: "../needForSpeedHeat.jpg",
-    categoria: ["Arcade", "Deportes y carreras"],
+    categoria: ["Arcade", "Deportes y Carreras"],
     stock: 10,
   },
   {
-    id: "34",
+    /*id: "34",*/
     nombre: "No Man's Sky",
     precio: 23.99,
     descripcion:
@@ -355,7 +355,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "35",
+    /*id: "35",*/
     nombre: "Outer Wilds",
     precio: 12.99,
     descripcion:
@@ -365,7 +365,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "36",
+    /*id: "36",*/
     nombre: "Palworld",
     precio: 14.99,
     descripcion:
@@ -375,7 +375,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "37",
+    /*id: "37",*/
     nombre: "Pathologic 2",
     precio: 17.99,
     descripcion:
@@ -385,7 +385,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "38",
+    /*id: "38",*/
     nombre: "Persona 5",
     precio: 50.99,
     descripcion:
@@ -395,7 +395,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "39",
+    /*id: "39",*/
     nombre: "The Planet Crafter",
     precio: 12.49,
     descripcion:
@@ -405,7 +405,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "40",
+    /*id: "40",*/
     nombre: "Planta vs Zombies",
     precio: 29.99,
     descripcion:
@@ -415,7 +415,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "41",
+    /*id: "41",*/
     nombre: "Bad North",
     precio: 7.99,
     descripcion:
@@ -425,7 +425,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "42",
+    /*id: "42",*/
     nombre: "Project Zomboid",
     precio: 10.49,
     descripcion:
@@ -435,7 +435,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "43",
+    /*id: "43",*/
     nombre: "Red Dead Redemption 2",
     precio: 59.99,
     descripcion:
@@ -445,7 +445,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "44",
+    /*id: "44",*/
     nombre: "Resident Evil",
     precio: 12.49,
     descripcion:
@@ -455,7 +455,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "45",
+    /*id: "45",*/
     nombre: "Sekiro: Shadows Die Twice",
     precio: 29.99,
     descripcion:
@@ -465,7 +465,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "46",
+    /*id: "46",*/
     nombre: "Stardew Valley",
     precio: 4.99,
     descripcion:
@@ -475,7 +475,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "47",
+    /*id: "47",*/
     nombre: "Stellaris",
     precio: 23.99,
     descripcion:
@@ -485,7 +485,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "48",
+    /*id: "48",*/
     nombre: "Stray",
     precio: 8.99,
     descripcion:
@@ -495,7 +495,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "49",
+    /*id: "49",*/
     nombre: "Street Fighter 6",
     precio: 29.99,
     descripcion:
@@ -505,7 +505,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "50",
+    /*id: "50",*/
     nombre: "Subnáutica",
     precio: 20.99,
     descripcion:
@@ -515,7 +515,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "51",
+    /*id: "51",*/
     nombre: "Supermarket Simulator",
     precio: 9.99,
     descripcion:
@@ -525,7 +525,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "52",
+    /*id: "52",*/
     nombre: "Tabletop Simulator",
     precio: 10.49,
     descripcion:
@@ -535,7 +535,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "53",
+    /*id: "53",*/
     nombre: "The Last Of Us Part II",
     precio: 39.99,
     descripcion:
@@ -545,7 +545,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "54",
+    /*id: "54",*/
     nombre: "They Are Billions",
     precio: 29.99,
     descripcion:
@@ -555,7 +555,7 @@ const productos = [
     stock: 10,
   },
   {
-    id: "55",
+    /*id: "55",*/
     nombre: "Travellers Rest",
     precio: 9.29,
     descripcion:
