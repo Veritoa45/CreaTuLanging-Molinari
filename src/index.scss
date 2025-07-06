@@ -32,6 +32,9 @@ body {
     @include flex-between;
 
     .relative {
+      width: 150px;
+
+      margin-left: 20px;
       &:hover .megaMenu {
         opacity: 1;
         visibility: visible;
@@ -74,6 +77,20 @@ body {
     padding: 5px;
     cursor: pointer;
   }
+}
+
+.contador {
+  position: absolute;
+  bottom: 35px;
+  right: 120px;
+  background: red;
+  color: $white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Item List */
@@ -160,20 +177,6 @@ body {
 .list {
   @include flex-wrap($gap-xl);
   padding: $padding-lg;
-}
-
-.contador {
-  position: absolute;
-  bottom: 35px;
-  right: 10px;
-  background: red;
-  color: $white;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .cardDescription {
@@ -263,13 +266,6 @@ body {
   }
 }
 
-.btnVaciar {
-  @include btn;
-  text-align: center;
-  width: 230px;
-  margin: 40px auto;
-}
-
 .trash {
   width: 30px;
   height: 30px;
@@ -331,4 +327,42 @@ body {
 .noProducts {
   @include grid-places;
   margin-top: 100px;
+}
+
+.lineBlock {
+  @include flex-center($gap-xl);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.checkout {
+  @include flex-column($gap-lg);
+  width: 500px;
+  margin: 50px auto;
+  padding: $padding-lg;
+  background: $secondary-color;
+  border-radius: $border-radius;
+
+  .subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+
+  .form {
+    @include flex-column($gap-xl);
+    input {
+      width: 100%;
+      padding: $padding-md;
+      border-radius: $border-radius;
+      border: 1px solid $black;
+      font-size: 16px;
+      height: 35px;
+      &:focus {
+        outline: none;
+        border-color: $tertiary-color;
+      }
+    }
+  }
 }

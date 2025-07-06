@@ -1,9 +1,10 @@
 import CartItem from "./CartItem";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 
 const CartView = () => {
-  const { cart, clearCart } = useContext(CartContext);
+  const { cart, clearCart, totalItems, totalPrice } = useContext(CartContext);
 
   return (
     <div className="cartView">
@@ -29,15 +30,20 @@ const CartView = () => {
             <th className="bold" colSpan={2}>
               Total
             </th>
-            <td className="bold">3</td>
+            <td className="bold">{totalItems()}</td>
             <td className="bold" colSpan={3}>
-              U$S 21,000
+              U$S {totalPrice()}
             </td>
           </tr>
         </tfoot>
       </table>
-      <div onClick={clearCart} className="btnVaciar">
-        Vaciar carrito
+      <div className="lineBlock">
+        <div onClick={clearCart} className="btn">
+          Vaciar carrito
+        </div>
+        <Link className="btn" to={"/checkout"}>
+          Terminar compra
+        </Link>
       </div>
     </div>
   );

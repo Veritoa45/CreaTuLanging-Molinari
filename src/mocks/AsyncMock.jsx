@@ -1,4 +1,4 @@
-const productos = [
+export const productos = [
   /*{
     id: "01",
     nombre: "Afterimage",

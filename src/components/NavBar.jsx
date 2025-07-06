@@ -88,12 +88,6 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <a href="#" className="aNav">
-          Algo
-        </a>
-        <a href="#" className="aNav">
-          Otro algo
-        </a>
         <CartWidget />
       </div>
     </nav>
