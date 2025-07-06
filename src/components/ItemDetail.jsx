@@ -20,13 +20,9 @@ const ItemDetail = ({ detail }) => {
       <div className="textInformation">
         <div className="textLine">
           <h2>{detail.nombre}</h2>
-          <p className="text-cyan-600 text-xl font-semibold">
-            U$S {detail.precio}
-          </p>
+          <p className="bold">U$S {detail.precio}</p>
         </div>
-        <p className="text-slate-600 leading-normal font-light">
-          {detail.descripcion}
-        </p>
+        <p className="bold">{detail.descripcion}</p>
       </div>
       {purchase ? (
         <div className="line">

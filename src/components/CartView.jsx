@@ -2,9 +2,32 @@ import CartItem from "./CartItem";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import toast from "react-hot-toast";
 
 const CartView = () => {
   const { cart, clearCart, totalItems, totalPrice } = useContext(CartContext);
+
+  const confirmClearCart = () => {
+    toast.custom((t) => (
+      <div className="toastConfirm">
+        <p>¿Estás segur@ de vaciar el carrito?</p>
+        <div className="toastButtons">
+          <button
+            onClick={() => {
+              clearCart();
+              toast.dismiss(t.id);
+            }}
+            className="btn"
+          >
+            Sí
+          </button>
+          <button onClick={() => toast.dismiss(t.id)} className="btn">
+            No
+          </button>
+        </div>
+      </div>
+    ));
+  };
 
   return (
     <div className="cartView">
@@ -12,12 +35,12 @@ const CartView = () => {
       <table className="table">
         <thead className="head">
           <tr>
-            <th className="th">Imagen</th>
-            <th className="th">Producto</th>
-            <th className="th">Cantidad</th>
-            <th className="th">Precio</th>
-            <th className="th">Total</th>
-            <th className="th"></th>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -38,7 +61,7 @@ const CartView = () => {
         </tfoot>
       </table>
       <div className="lineBlock">
-        <div onClick={clearCart} className="btn">
+        <div onClick={confirmClearCart} className="btn">
           Vaciar carrito
         </div>
         <Link className="btn" to={"/checkout"}>

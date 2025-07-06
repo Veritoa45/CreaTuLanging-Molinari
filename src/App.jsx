@@ -6,12 +6,14 @@ import ErrorPage from "./components/ErrorPage";
 import CartContainer from "./components/CartContainer";
 import { CartProvider } from "./context/CartContext";
 import Checkout from "./components/Checkout";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <BrowserRouter>
       <CartProvider>
         <NavBar />
+        <Toaster position="top-center" />
         <Routes>
           <Route
             path="/"

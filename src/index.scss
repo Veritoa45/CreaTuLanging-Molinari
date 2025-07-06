@@ -93,7 +93,7 @@ body {
   justify-content: center;
 }
 
-/* Item List */
+/* Item */
 
 .card {
   position: relative;
@@ -147,6 +147,8 @@ body {
   }
 }
 
+/* Item Count */
+
 .counter {
   @include flex-center;
   margin-bottom: 20px;
@@ -174,10 +176,14 @@ body {
   border: 1px solid $black;
 }
 
+/* Item List Container */
+
 .list {
   @include flex-wrap($gap-xl);
   padding: $padding-lg;
 }
+
+/* Item Detail */
 
 .cardDescription {
   position: relative;
@@ -221,25 +227,18 @@ body {
   }
 }
 
-.emptyCart {
-  @include grid-places;
-  margin-top: 40px;
+.line {
+  @include flex-around;
+  width: 100%;
 }
 
-.errorPage {
-  @include flex-column($gap-xl);
-  height: calc(100vh - 125px);
-  background: $primary-color;
-}
+/* Button General */
 
 .btn {
   @include btn;
 }
 
-.line {
-  @include flex-around;
-  width: 100%;
-}
+/* Loader */
 
 .loader {
   position: absolute;
@@ -266,15 +265,7 @@ body {
   }
 }
 
-.trash {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  color: #ff0000;
-  &:hover {
-    color: $tertiary-color;
-  }
-}
+/* Cart View */
 
 .cartView {
   @include grid-places;
@@ -297,6 +288,44 @@ body {
   }
 }
 
+.bold {
+  text-align: center;
+  font-weight: 600;
+}
+
+.lineBlock {
+  @include flex-center($gap-xl);
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Toast */
+
+.toastConfirm {
+  background: $white;
+  padding: 16px;
+  border: 1px solid $black;
+  border-radius: 8px;
+  text-align: center;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.toastButtons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+
+  .btn {
+    width: 60px;
+  }
+}
+
+/* Cart Item */
+
 .fila {
   padding: $padding-lg;
   background: rgba(227, 194, 254, 0.5);
@@ -314,10 +343,17 @@ body {
   border-radius: $border-radius;
 }
 
-.bold {
-  text-align: center;
-  font-weight: 600;
+.trash {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #ff0000;
+  &:hover {
+    color: $tertiary-color;
+  }
 }
+
+/* Special Pages */
 
 .oops {
   width: 500px;
@@ -329,11 +365,18 @@ body {
   margin-top: 100px;
 }
 
-.lineBlock {
-  @include flex-center($gap-xl);
-  margin-top: 20px;
-  width: 100%;
+.emptyCart {
+  @include grid-places;
+  margin-top: 40px;
 }
+
+.errorPage {
+  @include flex-column($gap-xl);
+  height: calc(100vh - 125px);
+  background: $primary-color;
+}
+
+/* Checkout */
 
 .checkout {
   @include flex-column($gap-lg);
@@ -365,4 +408,37 @@ body {
       }
     }
   }
+}
+
+.orderId {
+  @include flex-column($gap-lg);
+  width: 500px;
+  margin: 50px auto;
+  padding: $padding-lg;
+  background: $secondary-color;
+  border-radius: $border-radius;
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  h5 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.error {
+  color: $danger;
 }
