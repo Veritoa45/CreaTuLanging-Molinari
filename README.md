@@ -99,19 +99,19 @@ nevela/
 
 ## 💻 Version Deploy
 
-Pueden visitar el proyecto en el siguiente link: [Nevela]()
+Pueden visitar el proyecto en el siguiente link: [Nevela](https://nevela-yuam.vercel.app)
 
 ## 📬 Contacto
 
 <p align="center">
-  <img src="public/CV.png" alt="Foto" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;" />
+  <img src="public/CV.png" alt="Foto" width="80" />
   <h3 align="center">Verónica Molinari</h3>
-  <div style="display: flex; justify-content: center; gap: 50px;">
+  <p align="center">
   <a href="https://github.com/Veritoa45">
-    <img src="https://skillicons.dev/icons?i=github" />
+    <img src="https://skillicons.dev/icons?i=github" hspace="20"/>
   </a>
   <a href="https://www.linkedin.com/in/veronica-molinari/">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
+    <img src="https://skillicons.dev/icons?i=linkedin" hspace="20"/>
   </a>
-  </div> 
+  </p>
 </p>
